@@ -67,7 +67,7 @@ function ScrollImageSequence({
 
     const iw = img.naturalWidth;
     const ih = img.naturalHeight;
-    // Cover mode on desktop; zoom-out on mobile so the full car is visible
+    // Cover mode on desktop; zoom-out more on mobile so the full car is visible
     const isMobile = cw < 768;
     const coverScale = Math.max(cw / iw, ch / ih);
     const scale = isMobile ? coverScale * 0.82 : coverScale;

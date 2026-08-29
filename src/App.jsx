@@ -19,7 +19,7 @@ function TireLoader() {
   const cx = 80, cy = 80, r = 80;
   const outerR = 74;   // outer tire edge
   const innerR = 54;   // rim edge
-  const hubR   = 14;   // centre hub
+  const hubR = 14;   // centre hub
 
   // Tread blocks around outer ring
   const treadCount = 24;
@@ -27,7 +27,7 @@ function TireLoader() {
     const angle = (i / treadCount) * 360;
     const gap = 7; // degrees gap between blocks
     const start = angle + gap / 2;
-    const end   = angle + (360 / treadCount) - gap / 2;
+    const end = angle + (360 / treadCount) - gap / 2;
     const toRad = (d) => (d * Math.PI) / 180;
     const x1 = cx + outerR * Math.cos(toRad(start));
     const y1 = cy + outerR * Math.sin(toRad(start));
@@ -341,7 +341,8 @@ function App() {
 
       <main id="main-content">
         {/* 1. Hero — Fortuner assembly animation */}
-        <HeroAssembly />
+        {/* <HeroAssembly /> */}
+        <WeddingAnimation />
 
         {/* 2. Luxury positioning */}
         <LuxuryIntro />
@@ -350,7 +351,8 @@ function App() {
         <Features />
 
         {/* 4. Wedding decoration animation */}
-        <WeddingAnimation />
+        {/* <WeddingAnimation /> */}
+        <HeroAssembly />
 
         {/* 5. Wedding groom section */}
         <WeddingSection />
